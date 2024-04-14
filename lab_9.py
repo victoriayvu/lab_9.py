@@ -5,7 +5,12 @@ def encode(num):
         new_number += add_three
     return new_number
 
-
+def decode(encoded):
+    decode = ''
+    for char in encoded:
+        decoded_char = chr(ord(char) - 1)
+        decode += decoded_char
+    return decode
 
 def start():
     while True:
